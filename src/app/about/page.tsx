@@ -11,10 +11,13 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
+              <Image 
                 src="/images/tutorCoach.png" 
                 alt="Fortunate Ayodele - TutorCoach"
                 className="w-full h-full object-cover"
+                width={800}
+                height={600}
+            
               />
             </div>
 

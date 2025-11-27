@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import Button from '../ui/Button';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -43,7 +43,7 @@ export default function Hero() {
       }, duration / steps);
 
       return () => clearInterval(timer);
-    }, [end, mounted]);
+    }, [end]);
 
     return <span>{count.toLocaleString()}{suffix}</span>;
   };
@@ -132,10 +132,12 @@ export default function Hero() {
           >
             {/* Main Hero Image */}
             <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
-              <img 
+              <Image 
                 src="/images/myHero.png" 
                 alt="Professional Tutor"
                 className="w-full h-full object-cover"
+                width={800}
+                height={600}
               />
               
               {/* Gradient Overlay for better card visibility */}
