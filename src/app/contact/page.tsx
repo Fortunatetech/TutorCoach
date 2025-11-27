@@ -11,17 +11,27 @@ export default function ContactPage() {
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setStatus('loading');
 
-    // Simulate API call
-    setTimeout(() => {
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setStatus('idle'), 3000);
-    }, 1000);
-  };
+    } else {
+      setStatus('error');
+    }
+  } catch (error) {
+    setStatus('error');
+  }
+};
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-neutral-50 to-white">
@@ -108,7 +118,7 @@ export default function ContactPage() {
                   Prefer email? Send your questions directly to:
                 </p>
                 <a href="mailto:hello@tutorcoach.com" className="text-brand-teal-600 font-semibold hover:text-brand-teal-700">
-                  hello@tutorcoach.com
+                  ayodeleayodeji250@gmail.com
                 </a>
               </div>
 
@@ -140,7 +150,7 @@ export default function ContactPage() {
                     </a>
                   </li>
                   <li>
-                    <a href="/services/writing" className="text-brand-teal-600 hover:text-brand-teal-700">
+                    <a href="/Services" className="text-brand-teal-600 hover:text-brand-teal-700">
                       → Browse services
                     </a>
                   </li>

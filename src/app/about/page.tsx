@@ -10,10 +10,12 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image */}
-            <div className="relative h-[500px] rounded-2xl overflow-hidden bg-gradient-to-br from-brand-teal-400 to-brand-navy-900">
-              <div className="absolute inset-0 flex items-center justify-center text-white text-6xl font-bold">
-                👨‍🏫
-              </div>
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/tutorCoach.png" 
+                alt="Fortunate Ayodele - TutorCoach"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Content */}
@@ -107,6 +109,59 @@ export default function AboutPage() {
                 <p className="text-lg text-neutral-600">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+{/* Who I Work With */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16">Who I Work With</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-brand-teal-50 to-white p-8 rounded-xl border border-brand-teal-100">
+              <div className="text-5xl mb-4">👶</div>
+              <h3 className="text-xl font-bold mb-3">Kids (K–12)</h3>
+              <p className="text-neutral-600">
+                Homework help, concept building, and confidence development for young learners.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-accent-coral-50 to-white p-8 rounded-xl border border-accent-coral-100">
+              <div className="text-5xl mb-4">🎓</div>
+              <h3 className="text-xl font-bold mb-3">Students (High School & University)</h3>
+              <p className="text-neutral-600">
+                Exam preparation, project guidance, and academic success strategies.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-accent-yellow-50 to-white p-8 rounded-xl border border-accent-yellow-100">
+              <div className="text-5xl mb-4">💼</div>
+              <h3 className="text-xl font-bold mb-3">Professionals</h3>
+              <p className="text-neutral-600">
+                Upskilling for work, technical interview prep, and communication polishing.
+              </p>
+            </div>
+          </div>
+
+          {/* Platforms & Turnaround */}
+          <div className="bg-neutral-50 p-8 rounded-xl">
+            <h3 className="text-2xl font-bold mb-6 text-center">Platforms & Turnaround</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">💻</span>
+                <div>
+                  <h4 className="font-semibold mb-1">Platforms</h4>
+                  <p className="text-neutral-600">Zoom, Google Meet, collaborative docs (Google Docs, GitHub)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">⚡</span>
+                <div>
+                  <h4 className="font-semibold mb-1">Turnaround</h4>
+                  <p className="text-neutral-600">Draft feedback within 72 hours (rush options available)</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

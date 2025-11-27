@@ -25,9 +25,9 @@ export default function Button({
   const baseStyles = 'font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center';
   
   const variantStyles = {
-    primary: 'bg-gradient-to-r from-accent-coral-500 to-accent-coral-600 text-white hover:shadow-lg hover:scale-[1.01] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed',
-    secondary: 'border-2 border-brand-teal-500 text-brand-teal-600 hover:bg-brand-teal-50 active:scale-[0.98]',
-    ghost: 'text-neutral-700 hover:bg-neutral-100 active:scale-[0.98]',
+    primary: 'bg-gradient-to-r from-accent-coral-500 to-accent-coral-600 text-white hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed transform transition-all duration-200',
+    secondary: 'border-2 border-brand-teal-500 text-brand-teal-600 hover:bg-brand-teal-50 hover:border-brand-teal-600 active:scale-[0.98] transition-all duration-200',
+    ghost: 'text-neutral-700 hover:bg-neutral-100 active:scale-[0.98] transition-all duration-200',
   };
 
   const sizeStyles = {
