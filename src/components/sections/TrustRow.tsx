@@ -22,7 +22,7 @@ export default function TrustRow() {
           ))}
         </div>
         <p className="text-center mt-8 text-neutral-600">
-          Trusted by 1,200+ learners — avg rating <span className="font-bold text-brand-teal-600">4.9/5</span>
+          Trusted by 1,000+ learners — avg rating <span className="font-bold text-brand-teal-600">4.9/5</span>
         </p>
       </div>
     </section>

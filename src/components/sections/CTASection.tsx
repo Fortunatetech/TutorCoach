@@ -12,7 +12,7 @@ export default function CTASection() {
           Ready to Transform Your Learning?
         </h2>
         <p className="text-2xl mb-8 text-white/90">
-          Join 1,200+ students who&apos;ve achieved breakthrough results with personalized tutoring
+          Join 1,000+ students who&apos;ve achieved breakthrough results with personalized tutoring
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">

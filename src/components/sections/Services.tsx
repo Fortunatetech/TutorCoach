@@ -19,7 +19,7 @@ export default function Services() {
       <section id="services" className="py-20 px-4 bg-gradient-to-b from-white to-neutral-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-brand-teal-500 font-semibold uppercase tracking-wide">Our Services</span>
+            <span className="text-brand-teal-500 font-semibold uppercase tracking-wide">My Services</span>
             <h2 className="text-5xl font-bold mt-4 mb-6">
               Expert Guidance in <span className="text-brand-teal-500">Everything You Need</span>
             </h2>

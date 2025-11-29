@@ -84,7 +84,7 @@ export default function Hero() {
 
             {/* Subheading */}
             <p className="text-lg text-neutral-600 mb-7 max-w-xl leading-relaxed">
-              Personalized 1-on-1 tutoring in writing, programming, test prep, and career development. 
+              Personalized 1-on-1 tutoring in writing & English, Academic Tutoring, Administrtion Tools, Programming & AI, Databases, test prep, and career development. 
               Achieve breakthrough results with expert guidance.
             </p>
 
@@ -117,7 +117,7 @@ export default function Hero() {
                   <span className="text-accent-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
                 </div>
                 <p className="text-sm text-neutral-600">
-                  <span className="font-bold">4.9/5</span> from 1,203 students
+                  <span className="font-bold">4.9/5</span> from 1,005 students
                 </p>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function Hero() {
             {/* Main Hero Image */}
             <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
               <Image 
-                src="/images/myHero.png" 
+                src="/images/MyHeroPics.png" 
                 alt="Professional Tutor"
                 className="w-full h-full object-cover"
                 width={800}
@@ -228,7 +228,7 @@ export default function Hero() {
                     delay: 1.5
                   }
                 }}
-                  className="absolute top-1/3 left-6 bg-white/90 backdrop-blur-lg rounded-2xl p-3 shadow-2xl border border-white/20"
+                  className="absolute top-1/2 left-8 bg-white/90 backdrop-blur-lg rounded-2xl p-3 shadow-2xl border border-white/20"
               >
                 <div className="text-center">
                   <div className="flex gap-0.5 mb-1">
@@ -245,7 +245,7 @@ export default function Hero() {
                     ))}
                   </div>
                   <p className="font-bold text-lg text-brand-navy-900">4.9/5</p>
-                  <p className="text-xs text-neutral-600">1,203 reviews</p>
+                  <p className="text-xs text-neutral-600">1,005 reviews</p>
                 </div>
               </motion.div>
              

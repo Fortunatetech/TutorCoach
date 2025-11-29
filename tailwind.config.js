@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // ============================================
+      // COLORS
+      // ============================================
       colors: {
         brand: {
           navy: {
@@ -51,20 +54,37 @@ module.exports = {
           error: '#DC2626',
         },
       },
+
+      // ============================================
+      // BOX SHADOWS
+      // ============================================
       boxShadow: {
         'glow-brand': '0 0 20px rgba(15, 181, 166, 0.3)',
         'glow-accent': '0 0 20px rgba(255, 122, 89, 0.4)',
       },
+
+      // ============================================
+      // ANIMATIONS
+      // ============================================
       animation: {
-        'scroll': 'scroll 30s linear infinite',
+        scroll: 'scroll 30s linear infinite',
+        fadeIn: 'fadeIn 0.5s ease-in',
       },
+
+      // ============================================
+      // KEYFRAMES
+      // ============================================
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
     },
   },
   plugins: [],
-}
+};
